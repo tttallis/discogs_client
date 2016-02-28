@@ -447,6 +447,7 @@ class Artist(PrimaryAPIObject):
     aliases = ListField('Artist')
     members = ListField('Artist')
     groups = ListField('Artist')
+    role = SimpleField()
 
     def __init__(self, client, dict_):
         super(Artist, self).__init__(client, dict_)
