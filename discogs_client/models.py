@@ -531,6 +531,7 @@ class Label(PrimaryAPIObject):
     sublabels = ListField('Label')
     parent_label = ObjectField('Label', optional=True)
     releases = ObjectCollection('Release')
+    catno = SimpleField()
 
     def __init__(self, client, dict_):
         super(Label, self).__init__(client, dict_)
